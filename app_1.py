@@ -19,15 +19,10 @@ data = {
     'MentalHealthIssue': [0, 1, 0, 1, 0, 0, 1, 0, 0, 1]
 }
 
-
 # Convert the dictionary into a pandas DataFrame
 df = pd.DataFrame(data)
 
-
 st.title("Dataset By Pooja shinde.")
-
-
-
 
 
 # Split the dataset into features and target variable
@@ -37,8 +32,6 @@ y = df['MentalHealthIssue']
 
 # # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
-
 
 
 # Create a decision tree classifier and fit it to the training data
